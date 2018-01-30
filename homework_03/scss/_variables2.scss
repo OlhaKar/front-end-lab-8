@@ -1,0 +1,25 @@
+$colorBodyBg: rgba(198, 238, 252, 0.53);
+$colorContTab: #3b3b3b;
+$colorText: #ffffff;
+$colorTextBrief: #000000;
+$colorHeadingsBord: #fccd10;
+$colorBrief: #fff178;
+$colorLinks: #f5c70f;
+$colorFrameTab: #94a34e;
+$colorBackgrTab: #677d01;
+$colorForm: #f5c70f;
+
+@mixin briefStyle(){
+	width: 100%;
+	height: 50px;
+	background-color: $colorBrief;
+	color: $colorTextBrief;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+@mixin h1Style() {
+	color: $colorHeadingsBord;
+	text-align: center;
+	text-transform: uppercase;
+}

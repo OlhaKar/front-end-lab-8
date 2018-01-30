@@ -1,0 +1,137 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $colorBodyBg;
+}
+
+#content {
+	width: 68%;
+	background-color: $colorContTab;
+	margin: 0 auto;
+	padding: 30px;
+	color: $colorText;
+}
+
+h1 {
+	@include h1Style();
+}
+
+h2 {
+	color: $colorHeadingsBord;
+}
+
+a {
+	color: $colorLinks;
+}
+
+img {
+	border: 2px solid $colorHeadingsBord;
+	padding: 2px;
+}
+
+.img-left {
+	float: left;
+	margin-right: 20px;
+}
+
+.img-right {
+	float: right;
+	margin-left: 33px;
+	margin-bottom: 10px;
+}
+
+.brief {
+	@include briefStyle();
+}
+
+caption {
+	text-align: right;
+	color: $colorTextBrief;
+}
+
+table {
+	width: 90%;
+	border: none;
+	border-collapse: collapse;
+	background-color: $colorBackgrTab;
+}
+
+th {
+	padding: 10px 0 10px 30px;
+	text-align: left;
+	color: $colorTextBrief;
+	background-color: $colorFrameTab;
+	text-transform: uppercase;
+
+	&:nth-child(1) {
+		width: 50%;
+	}
+
+	&:nth-child(2) {
+		width: 30%;
+	}
+}
+
+td {
+	padding: 10px 0 10px 30px;
+	text-align: left;
+	border-bottom: 2px solid $colorFrameTab;
+}
+
+label {
+	color: $colorForm;
+}
+
+input[type=text] {
+	width: 100%;
+	height: 30px;
+	margin: 8px 0;
+	border: 1px solid $colorForm;
+}
+
+.inp-left {
+	float: left;
+	width: 49%;
+	label {
+		display: block;
+	}
+}
+
+.inp-right {
+	float: right;
+	width: 49%;
+}
+
+input[type=email] {
+	width: 100%;
+	height: 30px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid $colorForm;
+}
+
+input[type=number] {
+	width: 100%;
+	height: 30px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid $colorForm;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	margin: 8px 0;
+	border: 1px solid $colorForm;
+}
+
+button {
+	width: 200px;
+	height: 40px;
+	border: 1px solid $colorLinks;
+	color: $colorLinks;
+	background: none;
+	font-size: 16px;
+}
