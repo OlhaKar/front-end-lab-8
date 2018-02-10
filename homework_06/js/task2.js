@@ -6,5 +6,5 @@ let euroToDollar = euroToUah / dollarToUah;
 let converterEuro = euro*euroToUah.toFixed(2);
 let converterUsd = dollar*dollarToUah.toFixed(2);
 console.log(euro + ' euros are equal ' + converterEuro + ' UAH, ' + 
-				dollar +  ' dollars are equal ' + converterUsd + ' UAH,' + 
-				' one euro is equal ' + euroToDollar.toFixed(2) + ' dollars');
+	dollar +  ' dollars are equal ' + converterUsd + ' UAH,' + 
+	' one euro is equal ' + euroToDollar.toFixed(2) + ' dollars');
